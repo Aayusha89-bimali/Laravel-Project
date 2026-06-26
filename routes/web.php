@@ -19,5 +19,6 @@ Route::middleware('auth')->group(function () {
     // Admin only routes
     Route::middleware('role:admin')->group(function () {
         Route::resource('users', UserController::class);
+        // Test change
     });
 });
